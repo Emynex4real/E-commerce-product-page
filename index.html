@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | E-commerce Product Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header role="banner">
+            <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
+                <div class="logo-navContent">
+                    <div class="company-logo">
+                        <img src="images/logo.svg" alt="Company logo" aria-label="Company logo">
+                    </div>
+                    <div class="nav-content">
+                        <ul>
+                            <li><a href="#" tabindex="0">Collections</a></li>
+                            <li><a href="#" tabindex="0">Men</a></li>
+                            <li><a href="#" tabindex="0">Women</a></li>
+                            <li><a href="#" tabindex="0">About</a></li>
+                            <li><a href="#" tabindex="0">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cart-profile">
+                    <div class="cart-number-notification">
+                        <p class="notification" aria-live="polite"></p>
+                        <img src="images/icon-cart.svg" alt="Cart" class="cart-icon" aria-label="Cart">
+                        <div class="cart-popup" aria-live="polite">
+                            <div class="cart-head">
+                                <p class="head">Cart</p>
+                            </div>
+                            <hr>
+                            <div class="cart-big-content">
+                                <div class="cart-is-empty">
+                                    <p class="cart-empty">Your cart is empty</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/image-avatar.png" alt="User profile avatar" class="avatar">
+                </div>
+            </nav>
+            <hr>
+        </header>
+
+        <main role="main">
+            <div class="main-container">
+                <div class="first-container">
+                    <div class="image-container">
+                        <img src="images/image-product-1.jpg" alt="Product image" class="product-image">
+                    </div>
+                    <div class="image-thumbnails">
+                        <div class="preview-image-container">
+                            <img src="images/image-product-1-thumbnail.jpg" alt="Thumbnail image 1" tabindex="0" data-id="1" class="preview-image">
+                        </div>
+                        <div class="preview-image-container">
+                            <img src="images/image-product-2-thumbnail.jpg" alt="Thumbnail image 2" tabindex="0" data-id="2" class="preview-image">
+                        </div>
+                        <div class="preview-image-container">
+                            <img src="images/image-product-3-thumbnail.jpg" alt="Thumbnail image 3" tabindex="0" data-id="3" class="preview-image">
+                        </div>
+                        <div class="preview-image-container">
+                            <img src="images/image-product-4-thumbnail.jpg" alt="Thumbnail image 4" tabindex="0" data-id="4" class="preview-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="second-container">
+                    <div class="company-header">
+                        <p class="small-head">SNEAKER COMPANY</p>
+                        <p class="big-head">Fall Limited Edition Sneakers</p>
+                    </div>
+                    <p class="text"> These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                    <div class="price">
+                        <div class="product-price">
+                            <p class="discount-price">$125.00</p>
+                            <p class="discount">50%</p>
+                        </div>
+                        <div class="main-price">
+                            <p class="slash-price">$250.00</p>
+                        </div>
+                    </div>
+                    <div class="add-to-cart">
+                        <div class="increase-reduce">
+                            <button class="reduce" aria-label="Decrease quantity">
+                                <img src="images/icon-minus.svg" alt="Decrease quantity icon">
+                            </button>
+                            <p class="number" aria-live="polite">0</p>
+                            <button class="add" aria-label="Increase quantity">
+                                <img src="images/icon-plus.svg" alt="Increase quantity icon">
+                            </button>
+                        </div>
+                        <button class="cart" aria-label="Add to Cart">
+                            <img src="images/icon-cart.svg" alt="" class="cart-icon">Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="hover-preview-container" aria-hidden="true">
+            <div class="preview-big-container">
+                <div class="preview-container">
+                    <div class="cancel-icon">
+                        <img src="images/icon-close.svg" alt="Close preview" class="cancel" tabindex="0" aria-label="Close preview">
+                    </div>
+                    <div class="preview-big-image">
+                        <div class="previewed-image">
+                            <img src="images/image-product-1.jpg" alt="Large preview of product" class="image">
+                        </div>
+                        <div class="preview-thumbnails">
+                            <div class="preview-thumbnails-image">
+                                <img src="images/image-product-1-thumbnail.jpg" alt="Preview thumbnail 1" tabindex="0" data-id="1" class="preview-images thumbnail-active">
+                            </div>
+                            <div class="preview-thumbnails-image">
+                                <img src="images/image-product-2-thumbnail.jpg" alt="Preview thumbnail 2" tabindex="0" data-id="2" class="preview-images">
+                            </div>
+                            <div class="preview-thumbnails-image">
+                                <img src="images/image-product-3-thumbnail.jpg" alt="Preview thumbnail 3" tabindex="0" data-id="3" class="preview-images">
+                            </div>
+                            <div class="preview-thumbnails-image">
+                                <img src="images/image-product-4-thumbnail.jpg" alt="Preview thumbnail 4" tabindex="0" data-id="4" class="preview-images">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-previous">
+                    <button class="previous-btn" aria-label="Previous image">
+                        <img src="images/icon-previous.svg" alt="Previous image" class="previous">
+                    </button>
+                    <button class="next-btn" aria-label="Next image">
+                        <img src="images/icon-next.svg" alt="Next image" class="next">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer role="contentinfo">
+            
+        </footer>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+        Coded by <a href="#">Michael Balogun</a>
+      </div>
+    <script src="projects.js"></script>
+</body>
+</html>
